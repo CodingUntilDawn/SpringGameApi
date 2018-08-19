@@ -1,12 +1,20 @@
-package Models;
+package Models.Entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Game {
-    private int id;
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private long id;
     private String name;
-    private String genra;
+    private String genre;
     private double price;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -22,12 +30,12 @@ public class Game {
         this.name = name;
     }
 
-    public String getGenra() {
-        return genra;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setGenra(String genra) {
-        this.genra = genra;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
     public double getPrice() {
