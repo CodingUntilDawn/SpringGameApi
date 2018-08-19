@@ -1,4 +1,4 @@
-package springgameapi.demo;
+package com.springgameapi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

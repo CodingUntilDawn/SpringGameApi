@@ -1,6 +1,12 @@
-package Models.Domain;
+package com.springgameapi.models.Entity;
 
-public class GameModel {
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Game")
+public class GameEntity {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
     private String name;
     private String genre;
@@ -10,7 +16,7 @@ public class GameModel {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -22,11 +28,11 @@ public class GameModel {
         this.name = name;
     }
 
-    public String getGenra() {
+    public String getGenre() {
         return genre;
     }
 
-    public void setGenra(String genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
