@@ -1,6 +1,6 @@
-package com.springgameapi.services.Face;
+package com.springgameapi.services.face;
 
-import com.springgameapi.models.Domain.GameModel;
+import com.springgameapi.models.domain.GameModel;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,6 +1,12 @@
-package com.springgameapi.models.Domain;
+package com.springgameapi.models.entity;
 
-public class GameModel {
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Game")
+public class GameEntity {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
     private String name;
     private String genre;

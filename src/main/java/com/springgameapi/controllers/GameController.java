@@ -1,7 +1,7 @@
 package com.springgameapi.controllers;
 
-import com.springgameapi.models.Domain.GameModel;
-import com.springgameapi.services.Face.GameService;
+import com.springgameapi.models.domain.GameModel;
+import com.springgameapi.services.face.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,8 +16,7 @@ public class GameController {
 
     @RequestMapping(value = "/getGame/{id}", method = RequestMethod.GET)
     public GameModel getGameById(@PathVariable("id") Long id){
-        GameModel testGameModel = gameService.getGameById(id);
-        return testGameModel;
+        return gameService.getGameById(id);
     }
 
     @RequestMapping(value = "/addGame", method = RequestMethod.PUT)

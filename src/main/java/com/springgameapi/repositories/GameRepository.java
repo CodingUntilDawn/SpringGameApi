@@ -1,6 +1,6 @@
 package com.springgameapi.repositories;
 
-import com.springgameapi.models.Entity.GameEntity;
+import com.springgameapi.models.entity.GameEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
